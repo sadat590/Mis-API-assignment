@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* Search Section */
+header {
+    margin-top: 20px;
+}
+
+#search-bar {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid #023527;
+}
+
+/* Country Cards */
+#country-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 18rem;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Modal Styles */
+#detailsModal .modal-content {
+    border-radius: 10px;
+}
+
+#detailsModal .modal-header {
+    background-color: #073b22;
+    color: white;
+}
+
+#detailsModal .modal-body {
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+    #search-bar {
+        width: 90%;
+    }
+
+    #country-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
